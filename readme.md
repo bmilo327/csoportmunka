@@ -1,4 +1,4 @@
-# Gubek Veronika és Bernáth Milán
+# Gubek Veronika és Bernáth Milán és Goda Brigitta
 
 ## Pitbull koncert
 
@@ -6,15 +6,17 @@
 
 ### Felosztás
 
-index.html - Milán
+index.html, elrendezes.css, navigacio.css,  - Milán
 
-urlap.html - Vera
+urlap.html, elrendezes.css, navigacio.css - Vera
+
+esemeny.html, elrendezes.css, navigacio.css - Brigi
 
 ---
 
 ### Főoldal
 
-**Főoldal elrendezése**
+**Főoldal és esemény oldal elrendezése**
 - header
 - nav
 - article
