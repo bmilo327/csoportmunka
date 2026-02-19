@@ -39,31 +39,65 @@
                 <li>
                     <a href="urlap.html">Jegyvásárlás</a>
                 </li>
+                <li>
+                    <a href="esemenyek.html">Események</a>
+                </li>
             </ul>
         </nav>
         <article>
-            <h1>I'm Back!</h1>
-            <p>Pitbull, polgári nevén Armando Christian Pérez, a világhírű amerikai rapper, énekes és producer, aki energikus színpadi jelenlétével és megállíthatatlan slágereivel hódította meg a világot. A „Mr. Worldwide” becenévre hallgató előadó olyan ikonikus dalokkal vált ismertté, mint a Give Me Everything, a Timber vagy a Fireball, amelyek garantáltan táncra perdítik a közönséget. Zenéjében a hip-hop, a pop és a latin ritmusok találkoznak, így koncertjei igazi, nemzetközi hangulatú show-műsorok.</p>
-            <h2>Vedd megy a jegyed most!</h2>
-            <div class="esemenykartyak">
-                <div class="kartya">
-                    <h2>Budapesti koncert</h2>
-                    <p>2026. 07. 21.</p>
-                    <a href="urlap.html">Jegyvásárlás</a>
-                </div>
-                <div class="kartya">
-                    <h2>Londoni koncert</h2>
-                    <p>2026. 07. 10.</p>
-                    <a href="urlap.html">Jegyvásárlás</a>
-                </div>
-                <div class="kartya">
-                    <h2>Stockholmi koncert</h2>
-                    <p>2026. 06. 23.</p>
-                    <a href="urlap.html">Jegyvásárlás</a>
-                </div>
+            <div class="szoveg">
+              <h1>I'm Back!</h1>
+              <p>Pitbull, polgári nevén Armando Christian Pérez, a világhírű amerikai rapper, énekes és producer, aki energikus színpadi jelenlétével és megállíthatatlan slágereivel hódította meg a világot. A „Mr. Worldwide” becenévre hallgató előadó olyan ikonikus dalokkal vált ismertté, mint a Give Me Everything, a Timber vagy a Fireball, amelyek garantáltan táncra perdítik a közönséget. Zenéjében a hip-hop, a pop és a latin ritmusok találkoznak, így koncertjei igazi, nemzetközi hangulatú show-műsorok.</p>
+            </div>
+            <div class="szoveg2">
+              <h2>Vedd megy a jegyed most!</h2>
+              <div class="esemenykartyak">
+                  <div class="kartya">
+                      <h2>Budapesti<br>koncert</h2>
+                      <p>Időpont: 2026. 07. 21.</p>
+                      <a href="urlap.html">Jegyvásárlás</a>
+                  </div>
+                  <div class="kartya">
+                      <h2>Londoni<br>koncert</h2>
+                      <p>Időpont: 2026. 07. 10.</p>
+                      <a href="urlap.html">Jegyvásárlás</a>
+                  </div>
+                  <div class="kartya">
+                      <h2>Stockholmi<br>koncert</h2>
+                      <p>Időpont: 2026. 06. 23.</p>
+                      <a href="urlap.html">Jegyvásárlás</a>
+                  </div>
+              </div>
             </div>
         </article>
         <footer>Bernáth Milán & Gubek Vera & Goda Brigitta</footer>
     </main>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>
