@@ -46,8 +46,8 @@
       </nav>
       <article>
         <form id="urlap" action="">
-          <fieldset>
-              <legend>Regisztráció</legend>
+          <fieldset class="regisztracio">
+              <legend>REGISZTRÁCIÓ</legend>
               <div>
                   <label for="nev">Teljes név<span>*</span></label>
                   <input type="text" name="nev" id="nev" placeholder="Mr.Worldwide" required maxlength="50">
@@ -61,8 +61,8 @@
                   <input type="email" name="ecim" id="ecim" placeholder="mr.worldwide@baldking.hu" required maxlength="100">
               </div>
           </fieldset>
-          <fieldset>
-              <legend>Érdeklődés</legend>
+          <fieldset class="erdeklodes">
+              <legend>ÉRDEKLŐDÉS</legend>
               <div>
                   <label for="edatum">Eseményeink</label>
                   <select name="esemenyek" id="esemenyek">
@@ -84,17 +84,17 @@
                   <label for=""></label>
                   <div>
                       <input type="radio" name="erd_tipus" id="tipus1" value="tipus1" checked>
-                      <label for="tipus1">típus1</label>
+                      <label for="tipus1">VIP</label>
                   </div>
                   <div>
                       <input type="radio" name="erd_tipus" id="tipus2" value="tipus2">
-                      <label for="tipus2">típus2</label>
+                      <label for="tipus2">Álló hely</label>
                   </div>
                   <div>
                       <input type="radio" name="erd_tipus" id="tipus3" value="tipus3">
-                      <label for="tipus3">típus3</label>
+                      <label for="tipus3">Ülő hely</label>
                   </div>
-                  <legend>Megjegyzes</legend>
+                  <legend class="megjegyzes">MEGJEGYZÉS</legend>
                   <div>
                     <textarea name="megjegyzes" id="megjegyzes" rows="5" cols="57" placeholder="Egyéb kérdés, komment..."></textarea>
                   </div>
