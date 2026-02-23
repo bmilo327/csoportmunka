@@ -81,26 +81,27 @@
                       <option value="10" name="10" id="v7">10-nél több</option>
                       <option value="20" name="20" id="v8">20-nál több</option>
                   </select>
-                  <label for=""></label>
-                  <div>
-                      <input type="radio" name="erd_tipus" id="tipus1" value="tipus1" checked>
-                      <label for="tipus1">VIP</label>
+                  <div class="radio-group">
+                    <div>
+                        <input type="radio" name="erd_tipus" id="tipus1" value="tipus1" checked>
+                        <label for="tipus1">VIP</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="erd_tipus" id="tipus2" value="tipus2">
+                        <label for="tipus2">Álló hely</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="erd_tipus" id="tipus3" value="tipus3">
+                        <label for="tipus3">Ülő hely</label>
+                    </div>
                   </div>
-                  <div>
-                      <input type="radio" name="erd_tipus" id="tipus2" value="tipus2">
-                      <label for="tipus2">Álló hely</label>
-                  </div>
-                  <div>
-                      <input type="radio" name="erd_tipus" id="tipus3" value="tipus3">
-                      <label for="tipus3">Ülő hely</label>
-                  </div>
-                  <legend class="megjegyzes">MEGJEGYZÉS</legend>
+                    <legend class="megjegyzes">MEGJEGYZÉS</legend>
                   <div>
                     <textarea name="megjegyzes" id="megjegyzes" rows="5" cols="57" placeholder="Egyéb kérdés, komment..."></textarea>
                   </div>
               </div>
           </fieldset>
-          <input type="submit" name="kuld" id="kuld" value="Küldés">
+          <input type="submit" name="kuld" id="kuld" value="Küldés" class="kuld">
         </form>
       </article>
       <footer>Pitbull™</footer>
