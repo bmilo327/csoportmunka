@@ -1,4 +1,94 @@
+/*elrendezes*/
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+    background-color: black;
+    padding: 20px;
+}
+
+header{
+    flex: 0 0 100%;
+}
+
+article{
+    flex: 0 0 100%;
+    text-align: justify;
+    box-shadow: 0 0 10px 4px white;
+    padding: 15px 30px 20px 30px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+footer{
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    color: white;
+}
+
+/*lapozhato galéria*/
+body {
+    margin:0;
+    background-color: black;
+}
+
+.mySlides {display: none}
+
+img {vertical-align: middle;
+  width: 100%;
+  max-height: 450px;}
+
+.slideshow-container {
+  max-width: 800px;
+  max-height: 450px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="elrendezes.css">
     <link rel="stylesheet" href="esemenyek.css">
     <link rel="stylesheet" href="navigacio.css">
-    <title>Document</title>
+    <title>Goda Brigitta</title>
 </head>
 <body>
     <main>
         <header>
-            
-        </header>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="kepek/pitbull_fejlec.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="kepek/pitbull_fejlec2.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="kepek/pitbull_fejlec3.jpeg" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+      </header>
         <nav>
             <ul>
                 <li>
@@ -29,24 +45,49 @@
             </ul>
         </nav>
         <article>
-            <h2>Előadó:</h2>
-                <h3>Pitbull</h3>
-            <h2>Előzenekar:</h2>
-                <h3>Lil Jon</h3>
+            <div class="eloadok">
+                <h1>Pitbull a Puskás Arénában</h1>
+                <h2>Előjátszó: Lil Jon</h2>
+            </div>
 
-            <p>Pitbull a Puskás Arénában</p>
-            <p>Előjátszó: Lil Jon</p>
-
-            <p>
-            Kopaszsapkákat bekészíteni, Mr. Worldwide, azaz Pitbull először Magyarországon! A szupersztár kopasz fejével, napszemüvegével és zakójával igazi jelenség, aki olyan dalokkal mozgatta meg a világot, mint a Give Me Everything vagy a Timber. Pitbull I’m Back! elnevezésű turnéjára is igazi partihangulatot ígér, a buliba pedig minket is meghívott: július 21-én ugyanis a Puskás Arénában ad hatalmas show-t, ahol nem kisebb előadó tart vele, mint Lil Jon. Dale!</p>
-            <p>
-            Az I’m Back! turné célja, hogy továbbvigye a fékezhetetlen partihangulatot a rajongók számára. Most még nagyobb színpadon, lenyűgöző vizuális effektekkel, látványos pirotechnikával, és persze Pitbull karakteres előadásmódjával várja a közönséget. A zenét, fényeket és speciális effekteket ötvöző show-ban vele tart zenekara, a The Agents, valamint táncosai, a The Most Bad Ones is, hogy közösen egy 
-            igazán felejthetetlen, energikus bulit varázsoljanak a színpadra. </p>
-            <p>
-            A turné során számos VIP csomagot és élményt is kínálnak a rajongóknak, hogy új szintre emeljék koncertélményüket. A csomagok tartalma eltérő lehet, de prémium belépőket, kapunyitás előtti korai bejutást, exkluzív VIP lounge-hozzáférést, különleges ajándéktárgyat és még sok mást is tartalmazhatnak. A VIP-csomagok pontos tartalma a választott ajánlattól függ.</p>
-            </p>
+            <div class="tartalom">
+                <p>
+                Kopaszsapkákat bekészíteni, Mr. Worldwide, azaz Pitbull először Magyarországon! A szupersztár kopasz fejével, napszemüvegével és zakójával igazi jelenség, aki olyan dalokkal mozgatta meg a világot, mint a Give Me Everything vagy a Timber. Pitbull I’m Back! elnevezésű turnéjára is igazi partihangulatot ígér, a buliba pedig minket is meghívott: július 21-én ugyanis a Puskás Arénában ad hatalmas show-t, ahol nem kisebb előadó tart vele, mint Lil Jon. Dale!</p>
+                <p>
+                Az I’m Back! turné célja, hogy továbbvigye a fékezhetetlen partihangulatot a rajongók számára. Most még nagyobb színpadon, lenyűgöző vizuális effektekkel, látványos pirotechnikával, és persze Pitbull karakteres előadásmódjával várja a közönséget. A zenét, fényeket és speciális effekteket ötvöző show-ban vele tart zenekara, a The Agents, valamint táncosai, a The Most Bad Ones is, hogy közösen egy 
+                igazán felejthetetlen, energikus bulit varázsoljanak a színpadra. </p>
+                <p>
+                A turné során számos VIP csomagot és élményt is kínálnak a rajongóknak, hogy új szintre emeljék koncertélményüket. A csomagok tartalma eltérő lehet, de prémium belépőket, kapunyitás előtti korai bejutást, exkluzív VIP lounge-hozzáférést, különleges ajándéktárgyat és még sok mást is tartalmazhatnak. A VIP-csomagok pontos tartalma a választott ajánlattól függ.</p>
+                </p></div>
         </article>
-        <footer></footer>
+        <footer>Én csináltam!</footer>
+            <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
     </main>
 </body>
 </html>
